@@ -1,0 +1,38 @@
+body
+{ 
+background-color: black;
+}
+
+#header
+{ 
+background-color: orange;
+}
+
+#nav
+{ 
+background-color: green;
+}
+
+#section
+{ 
+float: left;
+background-color: yellow;
+width: 75%;
+}
+
+#article
+{ 
+background-color: white;
+}
+
+#aside
+{ 
+float: right;
+background-color: red;
+width: 24%;
+}
+
+#footer
+{ 
+background-color: purple;
+}
