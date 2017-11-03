@@ -158,7 +158,32 @@ document.write('El numero mayor es '+ f);
 <br/>{
 <br/>document.write('El numero mayor es '+ e);
 <br/>}
+	
+<h3>Solucion Ejercicio 7.</h3>
+<script>
+var g= +prompt('Escribe un número.');
+var h= +prompt('Escribe otro número.');
+var i= +prompt('Escribe otro número más.');
 
+function mayor (){
+  if(g>h&&g>i){
+    document.write('El número mayor es '+ g);
+  }
+  else if(h>i){
+    document.write('El número mayor es '+ h);
+  }
+  else{
+    document.write('El número mayor es '+ i);
+  }
+};
+
+  if(g==h&&g==i&&h==i){
+    document.write('Son iguales.');
+  }
+  else{
+    document.write(mayor);
+  }
+	
 </body>
  
 </html>
