@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang=”es”>
 
@@ -16,7 +16,7 @@
 	<meta name="description" content="Test, Try">
  	<meta name="keywords" content="javascript, html, css">
 
-<script type="text/javascript" src="js/script_null.js"></script>
+	<script type="text/javascript" src="js/script_null.js"></script>
 
 
 </head>
@@ -28,6 +28,12 @@
 JavaScript. Per fer-los us caldrà fer servir les estructures bàsiques de control, però no cal ni fer servir funcions, ni taules. Solucions a quasi tots els exercicis les podeu trobar <a alt="solucions" href="http://multimedia.uoc.edu/blogs/pw/ca/2013/09/17/exercicis-de-javascript-iniciacio-solucions/">aqui.</a>
 
 <ol>
+
+<ul>
+<a alt="Index" href="index.html">
+<strong>Indice</strong>
+</a>
+</ul>
 
 <ul>
 <a alt="Solución Ejercicio 1" href="1.html">
@@ -66,9 +72,7 @@ JavaScript. Per fer-los us caldrà fer servir les estructures bàsiques de contr
 </ul>
 
 <ul>
-<a alt="Solución Ejercicio 7" href="7.html">
 <strong>Ejercicio 7.</strong>Escriu un programa que demani 3 números i escrigui a la pantalla el més gran dels tres.
-</a>
 </ul>
 
 <ul>
@@ -113,6 +117,29 @@ JavaScript. Per fer-los us caldrà fer servir les estructures bàsiques de contr
 
 </ol>
 
+<h3>Solucion Ejercicio 7.</h3>
+<script>
+
+var g= +prompt('Escribe un número.');
+var h= +prompt('Escribe otro número.');
+var i= +prompt('Escribe otro número más.');
+
+if(g==h&&g==i&&h==i){
+    document.write('Son iguales.');
+  }
+else{
+	if(g>h&&g>i){
+    document.write('El número mayor es '+ g);
+  }
+  	else if(h>i){
+    document.write('El número mayor es '+ h);
+  }
+ 	 else{
+    document.write('El número mayor es '+ i);
+  }
+}
+
+</script>
 
 </body>
 
