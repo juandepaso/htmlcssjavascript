@@ -125,14 +125,20 @@ JavaScript. Per fer-los us caldrà fer servir les estructures bàsiques de contr
 
 <script>
 
-var a= prompt('Escribe un frase.');
+var cadena = prompt('Escribe un frase.');
+var x = 0;
+var y = cadena.length;
 
-if(a/2==0){
-    document.write(a +'es par.');
-  }
-else{
-	  document.write(a +' es impar.');
-}
+document.write(cadena.length + "<br />" );
+document.write(cadena.charAt(0) + "<br />" );
+document.write(x + "<br />" );
+document.write(y + "<br />" );
+
+do{
+document.write(cadena.charAt(x));
+x += 1;
+} while(x <= cadena.length);
+
 
 </script>
 
