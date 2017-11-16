@@ -127,14 +127,19 @@ JavaScript. Per fer-los us caldrà fer servir les estructures bàsiques de contr
 
 var cadena = prompt('Escribe un frase.');
 var x = 0;
+var suma = 0;
 
 do{
-
- document.write(cadena.charAt(x)+ '<br />');
+ 
+ if(cadena.charAt(x) == "a"){
+ suma += 1;
+ }
+ 
  ++x;
-
  
 } while(x <= cadena.length);
+
+document.write(suma + '<br />');
 
 
 </script>
