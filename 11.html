@@ -90,7 +90,9 @@ JavaScript. Per fer-los us caldrà fer servir les estructures bàsiques de contr
 </ul>
 
 <ul>
+<a alt="Solución Ejercicio 10" href="10.html">
 <strong>Ejercicio 10.</strong>Escriu un programa que demani una frase i escrigui les vocals que apareixen
+</a>
 </ul>
 
 <ul>
@@ -123,12 +125,13 @@ JavaScript. Per fer-los us caldrà fer servir les estructures bàsiques de contr
 
 </ol>
 
-<h3>Solucion Ejercicio 10.</h3>
+<h3>Solucion Ejercicio 11.</h3>
 
 <script>
 
 var cadena = prompt('Escribe un frase.');
 var x = 0;
+var suma = 0;
 
 do{
  
@@ -136,19 +139,19 @@ do{
  {
  
  case "a":
- document.write("a");
+ suma +=1;
  break
  case "e":
- document.write("e");
+ suma +=1;
  break
  case "i":
- document.write("i");
+ suma +=1;
  break
  case "o":
- document.write("o");
+ suma +=1;
  break
  case "u":
- document.write("u");
+ suma +=1;
  break
  default:
  
@@ -156,6 +159,8 @@ do{
  ++x;
  
 } while(x <= cadena.length);
+
+document.write(suma);
 
 
 </script>
