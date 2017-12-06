@@ -155,10 +155,42 @@ do{
  }
  ++x;
  
-} while(x <= cadena.length);
-
+} while(cadena.length >= x);
 
 </script>
+
+<br/>
+<br/>var cadena = prompt('Escribe un frase.');
+<br/>var x = 0;
+
+<br/>do{
+ 
+<br/> switch (cadena.charAt(x))
+<br/> {
+ 
+<br/> case "a":
+<br/> document.write("a");
+<br/> break
+<br/> case "e":
+<br/> document.write("e");
+<br/> break
+<br/> case "i":
+<br/> document.write("i");
+<br/> break
+<br/> case "o":
+<br/> document.write("o");
+<br/> break
+<br/> case "u":
+<br/> document.write("u");
+<br/> break
+<br/> default:
+ 
+<br/> }
+<br/> ++x;
+ 
+<br/>} while(cadena.length >= x);
+
+
 
 </body>
 

@@ -127,7 +127,7 @@ JavaScript. Per fer-los us caldrà fer servir les estructures bàsiques de contr
 
 </ol>
 
-<h3>Solucion Ejercicio 11.</h3>
+<h3>Solucion Ejercicio 12.</h3>
 
 <script>
 
@@ -165,9 +165,9 @@ do{
  }
  ++x;
  
-} while(x <= cadena.length);
+} while(cadena.length >=x);
 
-document.write('has escrito '+cadena+'<br />');
+document.write('has escrito: '+'<i>'+cadena+'</i>'+'<br />');
 
 document.write('hay '+suma+' a'+'<br />');
 document.write('hay '+sume+' e'+'<br />');
@@ -180,6 +180,56 @@ sum= suma+sume+sumi+sumo+sumu;
 document.write('total '+sum+' vocales'+'<br />');
 
 </script>
+
+<br/>
+<br/>var cadena = prompt('Escribe una frase.');
+<br/>var x = 0;
+<br/>var suma = 0;
+<br/>var sume = 0;
+<br/>var sumi = 0;
+<br/>var sumo = 0;
+<br/>var sumu = 0;
+<br/>var sum;
+
+<br/>do{
+ 
+<br/> switch (cadena.charAt(x))
+<br/> {
+ 
+<br/> case "a":
+<br/> suma +=1;
+<br/> break
+<br/> case "e":
+<br/> sume +=1;
+<br/> break
+<br/> case "i":
+<br/> sumi +=1;
+<br/> break
+<br/> case "o":
+<br/> sumo +=1;
+<br/> break
+<br/> case "u":
+<br/> sumu +=1;
+<br/> break
+<br/> default:
+ 
+<br/> }
+<br/> ++x;
+ 
+<br/>} while(cadena.length >=x);
+
+<br/>document.write('has escrito: '+'<i>'+cadena+'</i>'+'<br/>');
+
+<br/>document.write('hay '+suma+' a'+'<br />');
+<br/>document.write('hay '+sume+' e'+'<br />');
+<br/>document.write('hay '+sumi+' i'+'<br />');
+<br/>document.write('hay '+sumo+' o'+'<br />');
+<br/>document.write('hay '+sumu+' u'+'<br />');
+
+<br/>sum= suma+sume+sumi+sumo+sumu;
+
+<br/>document.write('total '+sum+' vocales'+'<br />');
+
 
 </body>
 

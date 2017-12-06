@@ -84,19 +84,27 @@ JavaScript. Per fer-los us caldrà fer servir les estructures bàsiques de contr
 </ul>
 
 <ul>
+<a alt="Solución Ejercicio 9" href="9.html">
 <strong>Ejercicio 9.</strong>Escriu un programa que demani una frase i escrigui quants cops apareix la lletra a
+</a>
 </ul>
 
 <ul>
+<a alt="Solución Ejercicio 10" href="10.html">
 <strong>Ejercicio 10.</strong>Escriu un programa que demani una frase i escrigui les vocals que apareixen
+</a>
 </ul>
 
 <ul>
+<a alt="Solución Ejercicio 11" href="11.html">
 <strong>Ejercicio 11.</strong>Escriu un programa que demani una frase i escrigui quantes de les lletres que té són vocals
+</a>
 </ul>
 
 <ul>
+<a alt="Solución Ejercicio 12" href="12.html">
 <strong>Ejercicio 12.</strong>Escriu un programa que demani una frase i escrigui quants cops apareixen cadascuna de les vocals
+</a>
 </ul>
 
 <ul>
@@ -121,45 +129,48 @@ JavaScript. Per fer-los us caldrà fer servir les estructures bàsiques de contr
 
 </ol>
 
-<h3>Solucion Ejercicio 9.</h3>
+<h3>Solucion Ejercicio 13.</h3>
 
 <script>
 
-var cadena = prompt('Escribe un frase.');
-var x = 0;
-var suma = 0;
+var num = parseInt(prompt('Escribe un número.'));
 
-do{
- 
- if(cadena.charAt(x) == "a"){
- suma += 1;
- }
- 
- ++x;
- 
-} while(cadena.length >= x);
-
-document.write(suma + '<br/>');
+if(num%7==0){
+document.write(num+' es divisible por 7.'+'<br />');
+}
+else if(num%5==0){
+document.write(num+' es divisible por 5.'+'<br />');
+}
+else if(num%3==0){
+document.write(num+' es divisible por 3.'+'<br />');
+}
+else if(num%2==0){
+document.write(num+' es divisible por 2.'+'<br />');
+}
+else{
+document.write(num+' no es divisible ni por 2, ni por 3, ni por 5, ni por 7.'+'<br />');
+}
 
 </script>
 
 <br/>
-<br/>var cadena = prompt('Escribe un frase.');
-<br/>var x = 0;
-<br/>var suma = 0;
+<br/>var num = parseInt(prompt('Escribe un número.'));
 
-<br/>do{
- 
-<br/> if(cadena.charAt(x) == "a"){
-<br/> suma += 1;
-<br/> }
- 
-<br/> ++x;
- 
-<br/>} while(cadena.length >= x);
-
-<br/>document.write(suma + '<br/>');
-
+<br/>if(num%7==0){
+<br/>document.write(num+' es divisible por 7.'+'<br />');
+<br/>}
+<br/>else if(num%5==0){
+<br/>document.write(num+' es divisible por 5.'+'<br />');
+<br/>}
+<br/>else if(num%3==0){
+<br/>document.write(num+' es divisible por 3.'+'<br />');
+<br/>}
+<br/>else if(num%2==0){
+<br/>document.write(num+' es divisible por 2.'+'<br />');
+<br/>}
+<br/>else{
+<br/>document.write(num+' no es divisible ni por 2, ni por 3, ni por 5 y ni por 6.'+'<br />');
+<br/>}
 
 </body>
 
